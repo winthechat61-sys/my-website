@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Random Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🌐 GlobalGen</div>
+    <div class="nav-links">
+      <a href="#" class="active">All Generators</a>
+    </div>
+  </nav>
+
+  <div class="generator-box">
+    <h1>🌐 Global Random Generator</h1>
+    <p>Need instant inspiration? Choose a generator below to see the magic!</p>
+    
+    <div class="display-area" onclick="copyToClipboard()">
+      <h2 id="resultText">Click a button below!</h2>
+      <span class="copy-hint">📋 Click text to copy</span>
+    </div>
+    
+    <!-- 4-Button Grid with Bright, Distinct Classes -->
+    <div class="button-group">
+      <button class="btn btn-classic" onclick="generateClassicName()">🎮 Classic</button>
+      <button class="btn btn-minecraft" onclick="generateMinecraftName()">⛏️ Minecraft</button>
+      <button class="btn btn-fortnite" onclick="generateFortniteName()">⚔️ Fortnite</button>
+      <button class="btn btn-roblox" onclick="generateRobloxName()">🧱 Roblox</button>
+    </div>
+
+    <div class="history-section">
+      <h3>📜 Recently Generated:</h3>
+      <ul id="historyList">
+        <li class="empty-history">Your recent rolls will appear here...</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
